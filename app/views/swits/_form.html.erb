@@ -1,0 +1,18 @@
+<%= form_with(model: @swit, local: true , url: choose_new_or_edit ) do |form| %><% if @swit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @swit.errors.count %>There are errors.</h2>
+      <ul>
+      <% @swit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="swit_content">
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+  </div><br>
+  <%= form.submit "Create Swit" %>
+<% end %><br>
+
+<button type="button" class="createback"><%= link_to "Return to the Swits list screen", swits_path %>

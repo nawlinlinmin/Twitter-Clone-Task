@@ -1,0 +1,16 @@
+<h1>Swits list</h1>
+<p><%= notice %></p>
+<table>
+  <tr>
+    <th class="createcontent">Content</th>
+  </tr>
+<% @swits.each do |swit| %>
+  <tr>
+    <td><%= swit.content %></td>
+    <td><button type="button" class="checkthedetails"><%= link_to 'Check the details', swit_path(swit.id) %></button></td>
+    <td><button type="button" class="editswit"><%= link_to 'Edit swit', edit_swit_path(swit.id), data: { confirm: 'Do you really want to edit？' } %></button></td>
+    <td><button type="button" class="deleteswit"><%= link_to 'Delete swit', swit_path(swit.id), method: :delete, data: { confirm: 'Do you really want to delete？' } %></button></td>
+  </tr>
+<% end %>
+</table><br>
+<button type="button" class="create"><%= link_to "Create a new swit", new_swit_path %>

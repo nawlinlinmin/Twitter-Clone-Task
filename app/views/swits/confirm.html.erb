@@ -1,0 +1,7 @@
+<h3>Send the following contents.</h3>
+<%= form_with(model: @swit, local: true, url: swits_path) do |form| %>
+  <%= form.hidden_field :content %>
+  <p>Content:<%= @swit.content %></p>
+  <%= form.submit  "Sign up" %>
+  <%= form.submit "Back", name: 'back' %>
+<% end %>

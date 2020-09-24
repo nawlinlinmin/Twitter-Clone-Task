@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Switter</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+    <header>
+      <div class="logo">
+      <p>
+      <img class="header-logo" src="/assets/image9.png">
+      </p>
+      <p class="myswit"> My Swit </p>
+      </div>
+    </header>
+    <div class="content">
+        <%= yield %>
+    </div>
+   <footer class="footer">
+     <p>Copyright © 2020 SWIT INC All RIGHTS RESERVED.</p>
+   </footer>
+   </div>
+  </body>
+  </html>

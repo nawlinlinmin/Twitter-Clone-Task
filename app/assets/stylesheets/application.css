@@ -1,0 +1,124 @@
+html{
+  font-size: 62.5%;
+}
+body {
+  width: 980px;
+  margin: 0 auto;
+  background-color: white;
+}
+.container{
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header{
+  height: 80px;
+  font-size: 1.5rem;
+  border: 5px solid gray;
+}
+.logo{
+  width: 980px;
+  height: 80px;
+}
+.header-logo{
+  width:200px;
+  height: 80px;
+  float: left;
+  padding-left: 300px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.myswit{
+  float: right
+  padding-right: 100px;
+  height: 80px;
+  width: 100px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 5px 6px 5px gray;
+}
+.checkthedetails{
+  display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #2471A3;
+    color: white;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+  }
+  .editswit{
+    display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      background: #884EA0;
+      color: white;
+      border-bottom: solid 4px #627295;
+      border-radius: 3px;
+  }
+  .deleteswit{
+    display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      background: #E74C3C;
+      color: white;
+      border-bottom: solid 4px #627295;
+      border-radius: 3px;
+  }
+  a {
+  text-decoration: none;
+  color: white;
+}
+.create{
+  display: inline-block;
+  padding: 1em;
+  background: #186A3B;
+}
+.createedit{
+  display: inline-block;
+  padding: 1em;
+  background: skyblue;
+}
+.createback{
+  display: inline-block;
+  padding: 1em;
+  background: #DC7633;
+}
+.createshow{
+  display: inline-block;
+  padding: 1em;
+  background: #F1C40F;
+}
+.createcontent{
+  font-size: 1.5rem;
+}
+.swit_content{
+  font-size: 1.5rem;
+}
+ body {
+  text-align: center;
+}
+.content{
+  border: 5px solid gray;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 300px;
+}
+ .footer{
+   position: absolute;
+   bottom: 0;
+   background-color: #4D4D4D;
+   height: 100px;
+   width: 100%;
+   display: table;
+ }
+ .footer p {
+   font-size: 1rem;
+   color: #fff;
+   text-align: center;
+   vertical-align: middle;
+   display: table-cell;
+ }
